@@ -18,4 +18,4 @@
 # only valid positive non-zero integers will be passed into the function.
 
 def narcissistic(value):
-    return True if sum([int(num) ** len(str(value)) for num in str(value)]) == value else False
+    return value == sum([int(num) ** len(str(value)) for num in str(value)])
